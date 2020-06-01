@@ -1,0 +1,9 @@
+<h1>Login to your Account to create a Post</h1>
+<div>    
+    <form method="POST" action="login">{% csrf_token %}
+        <input type='text' name="username" placeholder="Username"><br>
+        <input type="password" name="Password" placeholder="Password"><br><br>
+        <button type="submit">Login</button><br>
+        <a href="{% url 'signup' %}">Signup</a> to create new account
+    </form>
+</div>

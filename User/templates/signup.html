@@ -1,0 +1,14 @@
+<h1>Create Account</h1>
+
+<div>
+    <form method="POST" action="signup">{% csrf_token %}
+        <input type='text' name='first_name' placeholder="First Name"><br>
+        <input type="text" name='last_name' placeholder="Last Name"><br>
+        <input type="email" name='email' placeholder="Email ID"><br>
+        <input type='text' name="username" placeholder="Username"><br>
+        <input type="password" name="password1" placeholder="Password"><br>
+        <input type="password" name="password2" placeholder="Confirm Password"><br><br>
+        <button type="submit">Submit</button><br>
+        <a href="{% url 'login' %}">Login</a> if you already have an account 
+    </form>
+</div>
